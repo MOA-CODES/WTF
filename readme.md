@@ -1,0 +1,1 @@
+made by moyo for bolu then edited by sir peter to use direct path or kannel.conf

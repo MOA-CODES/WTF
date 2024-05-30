@@ -1,0 +1,2 @@
+This is a kannel configuration file
+ A lot has to go into this;
