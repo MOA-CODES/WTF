@@ -1,17 +1,6 @@
 require('dotenv').config() 
 require('express-async-errors')
 
-//docs start
-const swaggerUI = require('swagger-ui-express')
-const YAML = require('yamljs')
-
-const path = require('path')
-const swaggerPath = path.resolve(__dirname, './swagger.yaml')
-const swaggerDoc = YAML.load(swaggerPath)
-const swaggerCss = "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.3.0/swagger-ui.min.css"
-
-//docs end
-
 const cors = require('cors')
 const express = require('express')
 
