@@ -1,0 +1,59 @@
+openapi: 3.0.0
+info:
+  title: WTF
+  contact: {}
+  version: '1.0'
+servers:
+- url: http://example.com
+  variables: {}
+paths:
+  /writeToKannel:
+    get:
+      tags:
+      - WTK
+      summary: GET /writeToKannel
+      operationId: GET/writeToKannel
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      deprecated: false
+    post:
+      tags:
+      - WTK
+      summary: POST /writeToKannel
+      operationId: POST/writeToKannel
+      parameters: []
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              allOf:
+              - $ref: '#/components/schemas/POSTwriteToKannelRequest'
+              - example:
+                  payload: Put the data you want to write to file here (post)
+            example:
+              payload: Put the data you want to write to file here (post)
+        required: true
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      deprecated: false
+components:
+  schemas:
+    POSTwriteToKannelRequest:
+      title: POSTwriteToKannelRequest
+      required:
+      - payload
+      type: object
+      properties:
+        payload:
+          type: string
+      example:
+        payload: Put the data you want to write to file here (post)
+tags:
+- name: WTK
+  description: ''
